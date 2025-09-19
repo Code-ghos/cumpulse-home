@@ -1,62 +1,99 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
-  useEffect(() => {
-    fetchDemo();
-  }, []);
-
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-            />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
-      </div>
+    <div>
+      <section className="relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent pointer-events-none" />
+        <div className="container py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">Digital Mental Health Support for Students</h1>
+            <p className="mt-4 text-lg text-muted-foreground max-w-prose">MindCampus helps you check in with yourself, get personalized guidance, and find the right support on campus—confidentially and with care.</p>
+            <div className="mt-6 flex gap-3">
+              <Button asChild size="lg"><Link to="/assessment">Start your check‑in</Link></Button>
+              <Button asChild variant="outline" size="lg"><Link to="/login">Login</Link></Button>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <Card className="h-36 md:h-40 bg-gradient-to-br from-primary/15 to-transparent">
+              <CardContent className="h-full flex items-center justify-center text-center">
+                <div>
+                  <div className="text-3xl font-bold">Confidential</div>
+                  <p className="text-sm text-muted-foreground">Your responses stay private</p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="h-36 md:h-40">
+              <CardContent className="h-full flex items-center justify-center text-center">
+                <div>
+                  <div className="text-3xl font-bold">Personal</div>
+                  <p className="text-sm text-muted-foreground">Advice that adapts to you</p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="h-36 md:h-40">
+              <CardContent className="h-full flex items-center justify-center text-center">
+                <div>
+                  <div className="text-3xl font-bold">Supportive</div>
+                  <p className="text-sm text-muted-foreground">Designed for student life</p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="h-36 md:h-40">
+              <CardContent className="h-full flex items-center justify-center text-center">
+                <div>
+                  <div className="text-3xl font-bold">Actionable</div>
+                  <p className="text-sm text-muted-foreground">Steps you can take today</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="container py-16">
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-center">How MindCampus helps</h2>
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="font-semibold mb-2">Self‑reflection</h3>
+              <p className="text-sm text-muted-foreground">Quick check‑ins make it easier to notice patterns and take care of yourself.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="font-semibold mb-2">Personalized advice</h3>
+              <p className="text-sm text-muted-foreground">Guidance adapts to your responses and evolves over time.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="font-semibold mb-2">Campus resources</h3>
+              <p className="text-sm text-muted-foreground">Helpful tips align with support options available to most students.</p>
+            </CardContent>
+          </Card>
+        </div>
+        <div className="mt-10 flex justify-center">
+          <Button asChild size="lg"><Link to="/assessment">Begin now</Link></Button>
+        </div>
+      </section>
+
+      <section className="border-t bg-muted/20">
+        <div className="container py-14 grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 className="text-xl font-semibold">About us</h3>
+            <p className="mt-2 text-sm text-muted-foreground">We are a student‑focused team committed to making mental health support more approachable and accessible. MindCampus is not a crisis service. If you are in immediate danger, contact local emergency services.</p>
+          </div>
+          <Card>
+            <CardContent className="p-6 text-sm text-muted-foreground">
+              <p>“MindCampus gave me small, doable steps that actually fit my schedule.”</p>
+              <p className="mt-2">— Student user</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
     </div>
   );
 }

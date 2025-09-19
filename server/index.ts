@@ -2,6 +2,8 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
+import { handleGetUser, handleLogin, handleLogout } from "./routes/auth";
+import { handleGetQuestions, handleLatestAssessment, handleSubmitAssessment } from "./routes/assessment";
 
 export function createServer() {
   const app = express();
@@ -18,6 +20,16 @@ export function createServer() {
   });
 
   app.get("/api/demo", handleDemo);
+
+  // Auth
+  app.post("/api/auth/login", handleLogin);
+  app.get("/api/user", handleGetUser);
+  app.post("/api/auth/logout", handleLogout);
+
+  // Assessment
+  app.get("/api/assessment/questions", handleGetQuestions);
+  app.post("/api/assessment/submit", handleSubmitAssessment);
+  app.get("/api/assessment/latest", handleLatestAssessment);
 
   return app;
 }

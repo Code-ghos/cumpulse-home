@@ -7,9 +7,9 @@ export default function Index() {
     <div>
       <section className="relative">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent pointer-events-none" />
-        <div className="container py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+        <div className="container py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2fb0ede0f64f42058be73805430a45c1%2F6191e2e4bba746cd8d3ef1e85dcc2e43)" }}>
           <div>
-            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">Digital Mental Health Support for Students</h1>
+            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-[rgba(94,123,144,1)]">Digital Mental Health Support for Students</h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-prose">MindCampus helps you check in with yourself, get personalized guidance, and find the right support on campus—confidentially and with care.</p>
             <div className="mt-6 flex gap-3">
               <Button asChild size="lg"><Link to="/assessment">Start your check‑in</Link></Button>

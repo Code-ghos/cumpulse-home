@@ -26,7 +26,7 @@ export default function Login() {
   return (
     <section className="container py-16 grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">Welcome to MindCampus</h1>
+        <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">Welcome to CalmPulse</h1>
         <p className="mt-3 text-muted-foreground">Log in with your email to save your check‑ins and receive personalized advice over time.</p>
       </div>
       <form onSubmit={onSubmit} className="bg-card border rounded-xl p-6 space-y-4 shadow-sm">

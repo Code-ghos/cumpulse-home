@@ -10,8 +10,8 @@ export default function Index() {
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent pointer-events-none" />
         <div className="container py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-[rgba(216,224,248,1)]">Digital Mental Health Support for Students</h1>
-            <p className="mt-4 text-lg max-w-prose text-[rgba(247,251,95,1)]">CalmPulse helps you check in with yourself, get personalized guidance, and find the right support on campus—confidentially and with care.</p>
+            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-[rgba(149,173,243,1)]">Digital Mental Health Support for Students</h1>
+            <p className="mt-4 text-lg max-w-prose text-[rgba(253,248,243,1)]">CalmPulse helps you check in with yourself, get personalized guidance, and find the right support on campus—confidentially and with care.</p>
             <div className="mt-6 flex gap-3">
               <Button asChild size="lg"><Link to="/assessment">Start your check‑in</Link></Button>
               <Button asChild variant="outline" size="lg"><Link to="/login">Login</Link></Button>
@@ -56,7 +56,7 @@ export default function Index() {
 
       <section className="py-16">
         <div className="container">
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-center text-[rgba(245,211,184,1)]">How CalmPulse helps</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-center text-[rgba(200,101,25,1)]">How CalmPulse helps</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           <Card className="bg-white border border-[rgb(226,233,233)] rounded-[12px] shadow-sm">
             <CardContent className="p-6">

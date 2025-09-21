@@ -55,21 +55,21 @@ export default function Index() {
 
       <section className="py-16 bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2fb0ede0f64f42058be73805430a45c1%2Fe17fbc4d8b2f475dbcf8560b3466cda1)" }}>
         <div className="container">
-        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-center">How CalmPulse helps</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-center text-[rgba(245,211,184,1)]">How CalmPulse helps</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
-          <Card>
+          <Card className="bg-white border border-[rgb(226,233,233)] rounded-[12px] shadow-sm">
             <CardContent className="p-6">
               <h3 className="font-semibold mb-2">Self‑reflection</h3>
               <p className="text-sm text-muted-foreground">Quick check‑ins make it easier to notice patterns and take care of yourself.</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="bg-white border border-[rgb(226,233,233)] rounded-[12px] shadow-sm">
             <CardContent className="p-6">
               <h3 className="font-semibold mb-2">Personalized advice</h3>
               <p className="text-sm text-muted-foreground">Guidance adapts to your responses and evolves over time.</p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="bg-white border border-[rgb(226,233,233)] rounded-[12px] shadow-sm">
             <CardContent className="p-6">
               <h3 className="font-semibold mb-2">Campus resources</h3>
               <p className="text-sm text-muted-foreground">Helpful tips align with support options available to most students.</p>
@@ -83,10 +83,10 @@ export default function Index() {
       </section>
 
       <section className="border-t" style={{ backgroundColor: "rgba(242, 248, 248, 0.2)" }}>
-        <div className="container py-14 grid md:grid-cols-2 gap-8 items-center bg-[rgba(252,247,254,1)]">
-          <div>
+        <div className="container py-14 grid md:grid-cols-2 gap-8 items-center bg-[rgba(252,247,254,1)] bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2fb0ede0f64f42058be73805430a45c1%2F3726f92177924ee3b682a3573f4c0370)" }}>
+          <div className="text-[rgba(232,166,99,1)]">
             <h3 className="text-xl font-semibold">About us</h3>
-            <p className="mt-2 text-sm text-muted-foreground">We are a student‑focused team committed to making mental health support more approachable and accessible. CalmPulse is not a crisis service. If you are in immediate danger, contact local emergency services.</p>
+            <p className="mt-2 text-sm text-[rgba(238,171,92,1)]">We are a student‑focused team committed to making mental health support more approachable and accessible. CalmPulse is not a crisis service. If you are in immediate danger, contact local emergency services.</p>
           </div>
           <Card>
             <CardContent className="p-6 text-sm text-muted-foreground">

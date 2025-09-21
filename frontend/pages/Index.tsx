@@ -5,9 +5,10 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function Index() {
   return (
     <div>
+      <div className="bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2fb0ede0f64f42058be73805430a45c1%2Fbcfc1dc99a4c4f9f91dbb9e7cafba1d8)" }}>
       <section className="relative">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent pointer-events-none" />
-        <div className="container py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2fb0ede0f64f42058be73805430a45c1%2Fbcfc1dc99a4c4f9f91dbb9e7cafba1d8)" }}>
+        <div className="container py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-[rgba(216,224,248,1)]">Digital Mental Health Support for Students</h1>
             <p className="mt-4 text-lg max-w-prose text-[rgba(247,251,95,1)]">CalmPulse helps you check in with yourself, get personalized guidance, and find the right support on campus—confidentially and with care.</p>
@@ -53,7 +54,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2fb0ede0f64f42058be73805430a45c1%2Fe17fbc4d8b2f475dbcf8560b3466cda1)" }}>
+      <section className="py-16">
         <div className="container">
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-center text-[rgba(245,211,184,1)]">How CalmPulse helps</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -81,6 +82,7 @@ export default function Index() {
         </div>
     </div>
       </section>
+      </div>
 
       <section className="border-t" style={{ backgroundColor: "rgba(242, 248, 248, 0.2)" }}>
         <div className="container py-14 grid md:grid-cols-2 gap-8 items-center bg-[rgba(252,247,254,1)] bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2fb0ede0f64f42058be73805430a45c1%2F3726f92177924ee3b682a3573f4c0370)" }}>

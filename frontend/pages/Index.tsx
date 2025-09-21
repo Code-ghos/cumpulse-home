@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function Index() {
   return (
     <div>
-      <div className="bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2fb0ede0f64f42058be73805430a45c1%2Fbcfc1dc99a4c4f9f91dbb9e7cafba1d8)" }}>
+      <div className="bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2fb0ede0f64f42058be73805430a45c1%2F08264d8826af45678d172916986d54c1?format=webp&width=800)" }}>
       <section className="relative">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent pointer-events-none" />
         <div className="container py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">

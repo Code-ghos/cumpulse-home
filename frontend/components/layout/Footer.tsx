@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="border-t bg-background">
       <div className="container py-10 grid gap-8 md:grid-cols-3">
         <div>
-          <h3 className="font-semibold mb-2">About MindCampus</h3>
+          <h3 className="font-semibold mb-2">About CalmPulse</h3>
           <p className="text-sm text-muted-foreground">A digital mental health and psychological support system for higher‑education students. Confidential, inclusive, and evidence‑informed.</p>
         </div>
         <div>
@@ -16,11 +16,11 @@ export default function Footer() {
         </div>
         <div>
           <h3 className="font-semibold mb-2">Contact</h3>
-          <p className="text-sm text-muted-foreground">For support or suggestions, reach us at support@mindcampus.example</p>
+          <p className="text-sm text-muted-foreground">For support or suggestions, reach us at support@calmpulse.example</p>
         </div>
       </div>
       <div className="border-t">
-        <div className="container py-4 text-xs text-muted-foreground">© {new Date().getFullYear()} MindCampus. For educational use only.</div>
+        <div className="container py-4 text-xs text-muted-foreground">© {new Date().getFullYear()} CalmPulse. For educational use only.</div>
       </div>
     </footer>
   );

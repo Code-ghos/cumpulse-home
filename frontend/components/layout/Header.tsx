@@ -10,8 +10,8 @@ export default function Header() {
     <header className="sticky top-0 z-40 w-full border-b bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold">MC</span>
-          <span className="font-semibold tracking-tight">MindCampus</span>
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold">CP</span>
+          <span className="font-semibold tracking-tight">CalmPulse</span>
         </Link>
         <nav className="flex items-center gap-6 text-sm">
           <Link to="/" className={active("/")}>Home</Link>

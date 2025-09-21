@@ -82,10 +82,9 @@ export default function Index() {
         </div>
     </div>
       </section>
-      </div>
 
-      <section className="border-t" style={{ backgroundColor: "rgba(242, 248, 248, 0.2)" }}>
-        <div className="container py-14 grid md:grid-cols-2 gap-8 items-center bg-[rgba(252,247,254,1)] bg-no-repeat bg-center bg-cover" style={{ backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2fb0ede0f64f42058be73805430a45c1%2F3726f92177924ee3b682a3573f4c0370)" }}>
+      <section className="border-t">
+        <div className="container py-14 grid md:grid-cols-2 gap-8 items-center">
           <div className="text-[rgba(232,166,99,1)]">
             <h3 className="text-xl font-semibold">About us</h3>
             <h2 className="mt-2 text-sm text-[rgba(248,221,188,1)]">We are a student‑focused team committed to making mental health support more approachable and accessible. CalmPulse is not a crisis service. If you are in immediate danger, contact local emergency services.</h2>
@@ -98,6 +97,7 @@ export default function Index() {
           </Card>
         </div>
       </section>
+      </div>
     </div>
   );
 }
